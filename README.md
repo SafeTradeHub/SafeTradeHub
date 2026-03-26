@@ -1,16 +1,56 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafeTrade Hub</title>
+<link rel="stylesheet" href="style.css">
 
-<!--
-**SafeTradeHub/SafeTradeHub** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-Here are some ideas to get you started:
+</head>
+<body>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<header>
+    <img src="logo.png" class="logo">
+    <h1>SafeTrade Hub</h1>
+    <p class="tagline">Secure • Fast • Trusted Exchange</p>
+</header>
+
+<main>
+
+<section class="card">
+    <h2>⚡ Flash Buy</h2>
+    <input type="number" id="flashAmount" placeholder="Enter Amount">
+    <button onclick="flashBuy()">Buy Now</button>
+</section>
+
+<section class="card">
+    <h2>🔁 P2P Trade</h2>
+    <input type="number" id="p2pAmount" placeholder="Enter Amount">
+
+    <select id="type">
+        <option value="Buy">Buy</option>
+        <option value="Sell">Sell</option>
+    </select>
+
+    <button onclick="p2pTrade()">Submit</button>
+</section>
+
+<section class="card">
+    <h2>💬 WhatsApp Support</h2>
+    <a class="whatsapp-btn" href="https://wa.me/923446692639" target="_blank">
+        Chat on WhatsApp
+    </a>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 SafeTrade Hub | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
